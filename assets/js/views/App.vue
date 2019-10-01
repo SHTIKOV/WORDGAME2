@@ -1,12 +1,12 @@
 <template>
     <div>
-        <top-bar/>
+        <top-bar v-if="$route.name !=='game'"/>
         <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import TopBar from '../components/TopBar';
+    import TopBar from '../pages/TopBar';
 
     export default {
         name: "App",
